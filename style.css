@@ -1,0 +1,132 @@
+body{
+   margin: 0;
+   font-family: 'Varela-Regular', sans-serif;
+   font-weight: normal;
+   font-size: 20px;
+   background-color: var(--white);
+   color: var(--primary-dark-black);
+
+   
+}
+h1 ,h2 ,h3 ,h4 {
+   font-family: 'Archivo-semiBold';
+   font-size: 40px;
+}
+
+a{
+   color: var(--primary-red);
+}
+/* Primary Colors*/
+:root{
+   --primary-red: #FF5A5F;
+  --primary-dark-black: #030201;
+  --minimal-yellow:  #fcdc5c ;
+  --white: #FFFFFF;
+  --links: #3366CC;
+  
+}
+
+.header{
+   display: flex;
+   justify-content: space-between;
+   margin: 1.5rem 1rem 2rem 1rem;
+   
+   
+}
+
+.Header-cta{
+   background-color: var(--minimal-yellow);
+}
+
+.logo{
+   height: auto;
+}
+
+
+.nav-menu  .ul{
+   display: flex;
+   gap: 1.7rem;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   }
+
+.nav-menu a{
+   color: var(--primary-dark-black);
+   text-decoration: none;
+}
+.nav-menu {
+   background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+   backdrop-filter: blur(10px); /* Blurs the content behind the menu */
+   padding: 10px 20px; /* Adds space inside the menu */
+   border-radius: 10px; /* Rounds the corners for a softer look */
+}
+
+.Header-cta{
+   margin-right: 20px;
+    margin-left: 20px;          /* Pushes button to the far right */
+    padding: 0 ;         /* Button padding */
+    background-color: var(--primary-dark-black);  /*  pink color */
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 5px;
+    width: 130px;
+    text-align:center;
+    letter-spacing: 0.2rem;
+    border: none;
+    font-family: 'Archivo-semiBold';
+}
+
+
+.listings{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 2;
+   margin-top: 3rem;
+   margin-bottom: 30px;
+   text-align: center;  
+   row-gap: 50px; 
+   margin-bottom: 12rem;
+  }
+  
+  .hero-image{
+
+   width: 100%;
+   height: auto;
+}
+
+.article .h1, .article .p, .article .Header-cta {
+   margin: 0;
+ }
+
+
+  .img{
+   width: 90%;
+   height: auto;
+   border-radius: 3%;
+   object-fit: cover;
+  }
+
+
+.fotter {
+   display: flex;
+   flex-direction: row;
+   margin-top: 0rem;
+   gap: 20px;
+   justify-content: space-around;
+}
+
+/* CSUSTOM FONT For Plain text*/
+@font-face {
+   font-family: 'Varela-Regular';
+   src: url(./assets/fonts/Varela/Varela-Regular.ttf);
+   font-weight: lighter;
+
+}
+
+/* Custom font for Headings*/
+@font-face {
+   font-family: 'Archivo-semiBold';
+   src: url(assets/fonts/Archivo/static/Archivo-SemiBold.ttf);
+}
